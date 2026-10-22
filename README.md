@@ -8,7 +8,7 @@ Fetch a user-supplied URL on your server without opening an SSRF hole. One small
 
 ## The story
 
-A SaaS I run lets a user paste their website so the app can grab their logo and brand color. The instant a server fetches a URL a user typed, that fetch becomes a weapon. Point it at `http://169.254.169.254/` on a cloud box and it reads the instance credentials. Point it at `http://localhost:6379` and it talks to the internal Redis. Point it at `http://10.0.0.5/admin` and it reaches a neighbor on the private network. The user never sees those addresses. The server does the connecting, so the server's trust is what gets spent.
+A SaaS I'm building lets a user paste their website so the app can grab their logo and brand color. The instant a server fetches a URL a user typed, that fetch becomes a weapon. Point it at `http://169.254.169.254/` on a cloud box and it reads the instance credentials. Point it at `http://localhost:6379` and it talks to the internal Redis. Point it at `http://10.0.0.5/admin` and it reaches a neighbor on the private network. The user never sees those addresses. The server does the connecting, so the server's trust is what gets spent.
 
 That class of bug is SSRF, server-side request forgery, and it is one of the most common ways the inside of an app gets touched from the outside. This module is the guard I put in front of every fetch that takes a URL from a person.
 
@@ -67,9 +67,9 @@ No network and no third-party package required: DNS is a fake resolver, HTTP is 
 
 ## Who made this
 
-Kyle Miller. I build AI systems and custom software that run real businesses: e-commerce automation, internal tools, content engines. This repo is a piece of one of my production apps, extracted and cleaned up. The business logic stays home.
+Kyle Miller. I build AI systems and custom software that run real businesses: e-commerce automation, internal tools, content engines. This repo is a piece of an app I'm building, extracted and cleaned up. The business logic stays home. I specify, test and verify; the code is written by AI coding agents under my direction.
 
-**Hire me:** [themisfoundry.com](https://themisfoundry.com)
+More: [linkedin.com/in/kylemillerfl](https://www.linkedin.com/in/kylemillerfl)
 
 ## License
 
