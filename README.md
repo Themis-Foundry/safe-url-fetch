@@ -67,9 +67,9 @@ No network and no third-party package required: DNS is a fake resolver, HTTP is 
 
 ## Who made this
 
-Kyle Miller. I build AI systems and custom software that run real businesses: e-commerce automation, internal tools, content engines. This repo is a piece of an app I'm building, extracted and cleaned up. The business logic stays home. I specify, test and verify; the code is written by AI coding agents under my direction.
+Kyle Miller. I design systems where AI agents do the building and a separate check decides whether the work counts. I write the rules and decide what the tests must prove; AI coding agents write the code. This repo is a piece of an app I'm building, extracted and cleaned up; the business logic stays home.
 
-More: [linkedin.com/in/kylemillerfl](https://www.linkedin.com/in/kylemillerfl)
+[themisfoundry.com](https://themisfoundry.com) · [LinkedIn](https://www.linkedin.com/in/kylemillerfl) · [more tools](https://github.com/kylemillerbuilds)
 
 ## License
 
